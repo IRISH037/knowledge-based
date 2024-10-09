@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacpan Beach</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        h2 {
+            text-align: left;
+        } 
+        p {
+            text-align: cleft;
+            color: #333;
+            margin: 20px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 400px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .eateries {
+            margin: 20px 0;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 10px;
+        }
+       
+        .eatery {
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .eatery:last-child {
+            border-bottom: none;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mayon Volcano</h1>
+    <p>The Mayon Volcano is situated in the southern part of the main island of Luzon, 500 kilometres south of Manila. Towering at a height of 2,462 meters above sea level, it is known for its perfectly conical shape whose natural beauty has inspired a number of legends and art. The most active volcano in the Philippines and one of the most active in the world, having erupted over 51 times in the past four centuries, the most destructive of which is in 1814 when five towns in its periphery were destroyed. Nevertheless, it has developed a culture of resiliency among the inhabitants of its vicinity, who always rebuilt their towns and cultivated their fields after each destructive eruption. </p>
+
+    <div class="gallery">
+        <img src="img/mayon.jpg" alt="Image 1">
+        <img src="img/mayonn.jpg" alt="Image 2">
+        <img src="img/mayonnn.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+    <div class="location">
+        <element class="strong">
+        <h2>Location & Contacts</h2>
+        <p><strong>Address:</strong> Legazpi City, Ligao City, Tabaco City</p>
+        <p><strong>Phone:</strong> +63 912 345 6789</p>
+        <p><strong>Email:</strong> info@mayonvolcano.com</p>
+        <div id="map">
+        </element>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43526.870105133305!2d123.68718510314424!3d13.266626593146777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1a9954fa1731f%3A0xdff71d3eddd0ea0d!2sMayon%20Volcano!5e1!3m2!1sen!2sph!4v1728367862668!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     <script>
+        // Function to initialize the map
+        function initMap() {
+            // Coordinates for the location
+            var location = { lat: 13.2578, lng: 123.6852 }; // Adjusted coordinates for Mayon Volcano
+            
+            // Creating the map centered at the given location
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: location
+            });
+            
+            // Adding a marker at the specified location
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+
+        // Function to open the modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+            initMap(); // Initialize the map when the modal opens
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+
+    <div class="eateries">
+        <h2>Recommended Eateries Nearby</h2>
+        <div class="eatery">
+            <strong>Eatery 1</strong><br>
+            Address: 123 Food St.<br>
+            Description: Known for delicious local cuisine.
+        </div>
+        <div class="eatery">
+            <strong>Eatery 2</strong><br>
+            Address: 456 Taste Ave.<br>
+            Description: Famous for its seafood dishes.
+        </div>
+        <!-- Add more eateries as needed -->
+    </div>
+
+    <button onclick="window.location.href='Populartour.html'">Back to Tourist Spots</button>
+
+</body>
+</html>

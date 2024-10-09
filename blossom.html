@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northern Blossom Flower Farm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        p {
+            text-align: left ;
+            color: #333;
+            margin: 20px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 400px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .eateries {
+            margin: 20px 0;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 10px;
+        }
+        .eatery {
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .eatery:last-child {
+            border-bottom: none;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Northern Blossom Flower Farm</h1>
+    <p> The Northern Blossom Flower Farm is located in Atok, Benguet. It is becoming a top tourist attraction in the region particularly for its rose cabbages plantation and several other varieties of colorful flowers. 
+
+        Aside from a majestic floral carpet running along the mountains, the flower farm is also a good point to get a view of the country’s highest peak, Mt. Pulag.
+        
+        Northern Blossom Flower Farm’s proprietor Lany Gan also runs a flower shop in Dangwa Flower Market, Manila, the primary source of flowers and foliage in the metro especially among florists and wedding and event organizers.</p>
+    <div class="gallery">
+        <img src="img/blossom.jpg" alt="Image 1">
+        <img src="img/blossommm.jpg" alt="Image 2">
+        <img src="img/blossomm.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+    <div class="location">
+        <element class="strong">
+        <h2>Location & Contacts</h2>
+        <p><strong>Address:</strong> Halsema Highway, Atok, Benguet, Philippines</p>
+        <p><strong>Phone:</strong> +63 912 345 6789</p>
+        <p><strong>Email:</strong> info@blossom.com</p>
+        <div id="map">
+        </element>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3633.8673119631612!2d120.7640303784484!3d16.625387543237558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391b6480cfc189b%3A0xd29665e5181bdf18!2sNorthern%20Blossom%20Flower%20Farm!5e1!3m2!1sen!2sph!4v1728374494488!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <script>
+        // Function to initialize the map
+        function initMap() {
+            // Coordinates for the location
+            var location = { lat: 13.2578, lng: 123.6852 }; // Adjusted coordinates for Mayon Volcano
+            
+            // Creating the map centered at the given location
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: location
+            });
+            
+            // Adding a marker at the specified location
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+
+        // Function to open the modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+            initMap(); // Initialize the map when the modal opens
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+
+    <div class="eateries">
+        <h2>Recommended Eateries Nearby</h2>
+        <div class="eatery">
+            <strong>Eatery 1</strong><br>
+            Address: 123 Food St.<br>
+            Description: Known for delicious local cuisine.
+        </div>
+        <div class="eatery">
+            <strong>Eatery 2</strong><br>
+            Address: 456 Taste Ave.<br>
+            Description: Famous for its seafood dishes.
+        </div>
+        <!-- Add more eateries as needed -->
+    </div>
+
+    <button onclick="window.location.href='Populartour.html'">Back to Tourist Spots</button>
+
+</body>
+</html>

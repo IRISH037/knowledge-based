@@ -1,0 +1,188 @@
+.hero-header {
+    background: url('citytours.png') center center no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    top: -77px;
+}
+
+.pal{
+    position: relative;
+    top: 50px;
+    left: 86px;
+}
+.logo {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    right: 50px;
+    bottom: 70px;
+    background: url('img/logoo.png') no-repeat;
+    background-size: cover;
+
+}
+
+h1{
+    left: 50px;
+}
+.dropdown-mene {
+    display: flex;             /* Use flexbox for layout */
+    flex-direction: column;    /* Make the items stack vertically */
+    gap: 15px;                 /* Add space between the links */
+    padding: 10px;             /* Add padding inside the dropdown */
+}
+
+.dropdown-item {
+    padding: 10px 20px;        /* Add padding to the links for more clickable area */
+    border-radius: 5px;        /* Optional: Rounded corners for a better look */
+    text-align: center;        /* Center-align text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Light background color on hover */
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.slideInDown {
+    animation-name: slideInDown;
+}
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.wow {
+    visibility: hidden;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    visibility: visible;
+}
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+.hero-header {
+    background: url('citytours.png') center center no-repeat;
+    background-size: cover;
+}
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1;
+}
+.owl-carousel .owl-stage {
+    position: relative;
+}
+.owl-carousel .owl-item {
+    float: left;
+    min-height: 1px;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+.owl-dots {
+    text-align: center;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+}
+
+.cute {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tourist-spot {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.tourist-spot img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tourist-spot h3 {
+    margin: 10px;
+    color: #007BFF;
+}
+
+.tourist-spot p {
+    padding: 0 10px;
+    color: #555;
+}
+
+.tourist-spot .location {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.tourist-spot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+.he {
+    text-align: center;
+    color: #007BFF;
+    font-size: xx-large;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+    margin-left: 570px;
+    padding: 5px;
+    position: relative;
+    top: -70px;
+    left: -50px;
+}
+.sksk{
+    cursor: pointer;
+}
+
