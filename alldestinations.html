@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>All Destinations</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="try.css">
     <link rel="stylesheet" href="try.js">
@@ -27,7 +27,7 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="navbar-brand">
+            <a href="login.html" class="navbar-brand">
                 <img src="img/logo.png" alt="Logo" class="navbar-logo"> <!-- Insert your logo file path here -->
                 Enchanted Luzon Getaways
             </a>
@@ -43,9 +43,9 @@
                     <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown">Destinations</a>
                     <ul class="dropdown-menu">
                         <li><a href="citytours.html" class="dropdown-item">City Tours</a></li>
-                        <li><a href="beaches.html" class="dropdown-item">Popular Toous</a></li>
+                        <li><a href="beaches.html" class="dropdown-item">Popular Tours</a></li>
                         <li><a href="adventure.html" class="dropdown-item">Adventure Tours</a></li>
-                        <li><a href="adventure.html" class="dropdown-item">Beaches</a></li>
+                        <li><a href="adventure.html" class="dropdown-item">Beach Tours</a></li>
                         <li><a href="alldestinations.html" class="dropdown-item">All Destinations</a></li>
                     </ul>
                 </li>
@@ -62,7 +62,7 @@
             <div class="row justify-content-center py-5">
                 <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
                     <div class="aboutluzon">
-                    <h1 class="display-3 text-white animated slideInDown">About Us</h1>
+                    <h1 class="display-3 text-white animated slideInDown">All Destinations</h1>
                     <div class="aboutpar">
                     <p>Enchanted Luzon Getaways is your ultimate guide to discovering the beauty and wonders of Luzon, from hidden gems to popular tourist destinations. We provide detailed information, curated itineraries, and insider tips to make your travel experience unforgettable. Whether you're seeking adventure, relaxation, or cultural exploration, Enchanted Luzon Getaways helps you plan the perfect trip across Luzon’s breathtaking landscapes.</p></div>
                 </div>
@@ -91,128 +91,253 @@
         </div>
     </div>
 </div>
+     <div class="alldestinations">
+    <!-- Navigation Buttons for Destination Categories -->
+    <div class="category-buttons">
+      <button class="tab-link active" onclick="showCategory('alldestinations')">All Destinations</button>
+      <button class="tab-link" onclick="showCategory('city-tours')">City Tours</button>
+      <button class="tab-link" onclick="showCategory('beaches')">Beach Tours</button>
+      <button class="tab-link" onclick="showCategory('adventures')">Adventure Tours</button>
+      <button class="tab-link" onclick="showCategory('popular')">Popular Tours</button>
+    </div>
 
-   <!-- About Start -->
-   <div class="aboutpic">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                <div class="position-relative h-100">
-                    <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt="" style="object-fit: cover;">
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <h6 class="coloroff">About Us</h6>
 
-                <h1 class="mb-4">Welcome to <span class=" colorof">Enchanted Luzon Getaways</span></h1>
-                <p class="mb-4 colorabout ">Luzon, the largest and most populous island in the Philippines, is a treasure trove of diverse landscapes, rich cultural heritage, and unique experiences. From the bustling metropolis of Manila to the serene mountains of the Cordilleras, Luzon offers a variety of tourist destinations that appeal to travelers of all interests.</p>
-                <p class="mb-4 colorabout ">This knowledge-based system provides an in-depth exploration of Luzon's top tourist spots, offering valuable information on historical landmarks, natural wonders, and vibrant local communities. Whether you're looking for adventure, relaxation, or a cultural journey, Luzon promises a memorable and enriching experience.1</p>
-                <div class="row gy-2 gx-4 mb-4">
-                    <div class="col-sm-6">
-                        <div class="cute"> <a href="cute.html">
-                        <p class="mb-0"><i class="fa fa-arrow-right colorof"></i>City Tour</p>
-                    </div></a>
-                    <div class="col-sm-6"> <a href="cute.html">
-                        <p class="mb-0"><i class="fa fa-arrow-right colorof"></i> Popular City</p>
-                    </div></a>
-                    <div class="col-sm-6"><a href="cute.html">
-                        <p class="mb-0"><i class="fa fa-arrow-right colorof"></i>Adventure City</p>
-                    </div></a>
-                    <div class="col-sm-6"><a href="cute.html">
-                        <p class="mb-0"><i class="fa fa-arrow-right colorof"></i>Beaches</p>
-                    </div></a>
-                    <div class="col-sm-6"><a href="cute.html">
-                        <p class="mb-0"><i class="fa fa-arrow-right colorof"></i>All Destinations</p>
-                    </div></a>
-                    
-                </div> </div>
-                <button class="pretty-button button1" href="cute.html">Read More</button>
-                <style>
-
-                    .pretty-button {
-  border: none; /* No border */
-  color: white; /* Text color */
-  padding: 15px 0; /* Vertical padding */
-  width: 200px; /* Fixed width for even sizes */
-  font-size: 18px; /* Font size */
-  border-radius: 25px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: all 0.3s ease; 
-}
-
-/* Button 1 */
-.button1 {
-  background-color: #86B817; 
-}
-
-.button1:hover {
-  background-color: #699804; /* Darker shade on hover */
-  transform: translateY(-3px); /* Lift the button */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    <!-- City Tours Section -->
+   
+    <div id="alldestinations" class="tab-content active">
+        <h3>Explore Everywhere</h3>
+        <div class="destination-grid">
+          <div class="destination-card">
+            <img src="images/manila.jpg" alt="Manila City">
+            <h4>Manila Historical Tour</h4>
+            <p>Explore Manila's rich colonial history with visits to Intramuros, Rizal Park, and Fort Santiago.</p>
+          </div>
+          <div class="destination-card">
+            <img src="images/vigan.jpg" alt="Vigan City">
+            <h4>Vigan Heritage Walk</h4>
+            <p>Stroll down the cobblestone streets of this UNESCO World Heritage Site, known for its preserved Spanish architecture.</p>
+          </div>
+          <div class="destination-card">
+            <img src="images/baguio.jpg" alt="Baguio City">
+            <h4>Baguio City Exploration</h4>
+            <p>Discover the cool mountain air of Baguio with stops at Burnham Park, Mines View, and the local strawberry farms.</p>
+          </div>
+        </div>
+      </div>
   
-}
-.colorof{
-    color: #86B817;
-}
-                </style>
-            </div>       
+
+    <!-- City Tours Section -->
+   
+    <div id="city-tours" class="tab-content">
+      <h3>Urban Adventures</h3>
+      <div class="destination-grid">
+        <div class="destination-card">
+          <img src="images/manila.jpg" alt="Manila City">
+          <h4>Manila Historical Tour</h4>
+          <p>Explore Manila's rich colonial history with visits to Intramuros, Rizal Park, and Fort Santiago.</p>
         </div>
+        <div class="destination-card">
+          <img src="images/vigan.jpg" alt="Vigan City">
+          <h4>Vigan Heritage Walk</h4>
+          <p>Stroll down the cobblestone streets of this UNESCO World Heritage Site, known for its preserved Spanish architecture.</p>
+        </div>
+        <div class="destination-card">
+          <img src="images/baguio.jpg" alt="Baguio City">
+          <h4>Baguio City Exploration</h4>
+          <p>Discover the cool mountain air of Baguio with stops at Burnham Park, Mines View, and the local strawberry farms.</p>
+        </div>
+      </div>
     </div>
-</div>
 
-<!-- Navbar & Hero End -->
-<!-- Navbar & Hero End -->
-
-     <!-- Mission, Vision, Values Section -->
-     <style>
-
-        .mission-values {
-                    display: flex;
-                    justify-content: space-around;
-                    margin-top: 40px;
-                }
-                .mission-values .box {
-                    background-color: #edf1e5;
-                    width: 30%;
-                    padding: 20px;
-                    border-radius: 8px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                }
-                .mission-values h3 {
-                    color: #007BFF;
-                    font-size: 1.8em;
-                    margin-bottom: 10px;
-                }
-                .mission-values p {
-                    font-size: 1.1em;
-                    color: black;
-                }
-                .box{
-                    position: relative;
-                    top: 130px;
-                    color: antiquewhite;
-                }
-
-                h3{
-                    color: #86B817;
-                }
-        
-        </style>
-     <div class="mission-values">
-        <div class="box">
-            <h3>Our Mission</h3>
-            <p>To provide travelers with detailed knowledge about the top tourist spots in Luzon, fostering a deep appreciation for the region’s history, culture, and natural beauty.</p>
+    <!-- Beaches Section -->
+    <div id="beaches" class="tab-content">
+      <h3>Coastal Escapes</h3>
+      <div class="destination-grid">
+        <div class="destination-card">
+          <img src="img/ampere.jpg" alt="Pagudpud Beach">
+          <h4>Pagudpud's White Sand Beaches</h4>
+          <p>Relax in the serene waters of Pagudpud, famous for its crystal-clear waters and white sandy shores.</p>
         </div>
-        <div class="box">
-            <h3>Our Vision</h3>
-            <p>To be the leading source of information for exploring Luzon’s best destinations, empowering tourists to experience the richness of the region and make informed travel decisions.</p>
+        <div class="destination-card">
+          <img src="img/hopping.jpg" alt="El Nido">
+          <h4>El Nido's Island Hopping</h4>
+          <p>Discover the beauty of El Nido's lagoons, hidden beaches, and vibrant coral reefs with island-hopping tours.</p>
         </div>
-        <div class="box">
-            <h3>Our Values</h3>
-            <p>We believe in sharing authentic, reliable, and comprehensive information that highlights Luzon’s unique charm. Our commitment to responsible tourism ensures that we promote sustainable travel practices that protect the environment and support local communities.</p>
+        <div class="destination-card">
+          <img src="img/nacpannn.jpg" alt="La Union">
+          <h4>La Union Surfing Shores</h4>
+          <p>Catch the waves in La Union, known as one of the top surfing destinations in the Philippines.</p>
         </div>
+      </div>
     </div>
-</div>
+
+    <!-- Popular Section -->
+    <div id="popular" class="tab-content">
+        <h3>Explore Destinations</h3>
+        <div class="destination-grid">
+          <div class="destination-card">
+            <img src="img/ampere.jpg" alt="Pagudpud Beach">
+            <h4>Pagudpud's White Sand Beaches</h4>
+            <p>Relax in the serene waters of Pagudpud, famous for its crystal-clear waters and white sandy shores.</p>
+          </div>
+          <div class="destination-card">
+            <img src="img/hopping.jpg" alt="El Nido">
+            <h4>El Nido's Island Hopping</h4>
+            <p>Discover the beauty of El Nido's lagoons, hidden beaches, and vibrant coral reefs with island-hopping tours.</p>
+          </div>
+          <div class="destination-card">
+            <img src="img/nacpannn.jpg" alt="La Union">
+            <h4>La Union Surfing Shores</h4>
+            <p>Catch the waves in La Union, known as one of the top surfing destinations in the Philippines.</p>
+          </div>
+        </div>
+      </div>
+  
+
+    <!-- Adventure Section -->
+    <div id="adventures" class="tab-content">
+      <h3>Thrilling Expeditions</h3>
+      <div class="destination-grid">
+        <div class="destination-card">
+          <img src="images/mt-pulag.jpg" alt="Mt. Pulag">
+          <h4>Mt. Pulag Hiking Adventure</h4>
+          <p>Climb the tallest peak in Luzon and witness the breathtaking sea of clouds at sunrise.</p>
+        </div>
+        <div class="destination-card">
+          <img src="images/siargao.jpg" alt="Siargao Island">
+          <h4>Siargao Island Surfing</h4>
+          <p>Experience world-class surfing in Siargao, the Philippines' top destination for thrilling wave action.</p>
+        </div>
+        <div class="destination-card">
+          <img src="images/pagsanjan.jpg" alt="Pagsanjan Falls">
+          <h4>Pagsanjan Falls River Rafting</h4>
+          <p>Take a thrilling boat ride through the rapids to reach the majestic Pagsanjan Falls.</p>
+        </div>
+      </div>
+    </div></div>
+  </section>
+  <style>
+.alldestinations{
+    position: relative;
+    top: 100px;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  color: #2b2b2b;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.category-buttons {
+  margin-bottom: 30px;
+}
+
+.tab-link {
+  background-color: #86B817;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-link:hover {
+  background-color: #5d8508;
+}
+
+.tab-link.active {
+  background-color: #2b2b2b;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.destination-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.destination-card {
+  background-color: #ffffff;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination-card h4 {
+  font-size: 20px;
+  color: #2b2b2b;
+  margin: 15px 10px 5px;
+}
+
+.destination-card p {
+  color: #666666;
+  font-size: 15px;
+  padding: 0 10px 15px;
+  line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+  background-color: #2b2b2b;
+  color: white;
+  padding: 40px 0;
+}
+
+@media (max-width: 768px) {
+  .destination-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+  <script>
+    function showCategory(category) {
+  const contents = document.querySelectorAll('.tab-content');
+  const buttons = document.querySelectorAll('.tab-link');
+
+  // Hide all content
+  contents.forEach(content => content.classList.remove('active'));
+  
+  // Remove active class from all buttons
+  buttons.forEach(button => button.classList.remove('active'));
+
+  // Show selected content
+  document.getElementById(category).classList.add('active');
+
+  // Add active class to the clicked button
+  event.currentTarget.classList.add('active');
+}
+
+  </script>
 <div class="footerdegg">
     <footer>
         <div class="footer-container">
@@ -403,10 +528,6 @@ footer {
 
       </style>
 
-<!-- Bootstrap JS & Font Awesome -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-
-
+  <script src="script.js"></script>
 </body>
 </html>
