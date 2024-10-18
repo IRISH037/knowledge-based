@@ -1,564 +1,1070 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enchanted Luzon Getaways</title>
-    <link rel="stylesheet" href="homepage.css">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    
+    <title>Echanted Luzon Getaways</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="try.js">
+     <!-- Google Web Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+ 
+     <!-- Icon Font Stylesheet -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+ 
+     <!-- Libraries Stylesheet -->
+     <link href="lib/animate/animate.min.css" rel="stylesheet">
+     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+ 
+     <!-- Customized Bootstrap Stylesheet -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- Navbar & Hero Start -->
-
-    <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-            <a href="" class="navbar-brand p-0">
-            <div class="pal">
-                <h1 class="text-primary m-0">Enchanted Luzon Getaways</h1>
-               </div>
-                     <div class="logo"> 
-            </div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="login.html" class="navbar-brand">
+                <img src="img/logo.png" alt="Logo" class="navbar-logo"> <!-- Insert your logo file path here -->
+                Enchanted Luzon Getaways
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="homepage.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destination</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="citytours.html" class="dropdown-item">City Tours</a>
-                            <a href="Populartour.html" class="dropdown-item">Popular Tours</a>
-                            <a href="Adventuretour.html" class="dropdown-item">Adventure Tours</a>
-                            <a href="beaches.html" class="dropdown-item">Beaches</a>
-                            <a href="Alldestination.html" class="dropdown-item">All Destination</a>
-                        </div>
-                    </div>
-                </div>
-                <a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
+            <div class="menu-icon" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav>
-
-        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
-            <div class="container py-5">
-                <div class="row justify-content-center py-5">
-                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-                        <h1 class="display-3 text-white mb-3 animated slideInDown">Best Tours in Luzon</h1>
-                        <p class="fs-4 text-white mb-4 animated slideInDown">Discover the all Best Enchanted places in Luzon</p>
-                        <div class="position-relative w-75 mx-auto animated slideInDown">
-                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Baguio City">
-                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Navbar & Hero End -->
-
-
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<!--About Us-->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                <div class="position-relative h-100">
-                    <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt="About Us" style="object-fit: cover;">
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                <h1 class="mb-4">Welcome to <span class="text-primary">Enchanted Luzon Getaways</span></h1>
-                <p class="mb-4">Luzon, the largest and most populous island in the Philippines, is a treasure trove of diverse landscapes, rich cultural heritage, and unique experiences. From the bustling metropolis of Manila to the serene mountains of the Cordilleras, Luzon offers a variety of tourist destinations that appeal to travelers of all interests.</p>
-                <p class="mb-4"> This knowledge-based system provides an in-depth exploration of Luzon’s top tourist spots, offering valuable information on historical landmarks, natural wonders, and vibrant local communities. Whether you're looking for adventure, relaxation, or a cultural journey, Luzon promises a memorable and enriching experience.1</p>
-                <div class="row gy-2 gx-4 mb-4">
-                    <div class="sksk">
-                    <div class="col-sm-6">
-                        <a href="citytours.html"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>City Tours</p></a>
-                    </div>
-                    <div class="col-sm-6">
-                        <a href="Populartour.html"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2" ></i>Popular Tours</p></a>
-                    </div>
-                    <div class="col-sm-6">
-                        <a href="Adventuretour.html"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Adventure Tours</p></a>
-                    </div>
-                    <div class="col-sm-6">
-                        <a href="beaches.html"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Beaches</p></a>
-                    </div>
-                </div></div>
-            </div>
-            <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
-        </div>
-    </div>
-</div>
-<!--End Of About Us-->
-
-
- <!-- City Destination Start -->
- <div class="container-xxl py-5 destination">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
-            <h1 class="mb-5">Popular Tours</h1>
-            <!DOCTYPE html>
-            <html lang="en">
-            
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Owl Carousel Demo</title>
-                <!-- Owl Carousel CSS -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-                
-               
-            </head>
-            
-            <body>
-            
-                <!-- Owl Carousel HTML -->
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <img src="img/blossomm.jpg" alt="Image 1">
-                    </div>
-                    <div class="item">
-                        <img src="img/callee.jpg" alt="Image 2">
-                    </div>
-                    <div class="item">
-                        <img src="img/Intramuross.jpg" alt="Image 3">
-                    </div>
-                    <div class="item">
-                        <img src="img/hills.png" alt="Image 4">
-                    </div>
-                    <div class="item">
-                        <img src="img/taal.jpg" alt="image 5">
-                    </div>
-                </div>
-            
-                <!-- Owl Carousel JS -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-            
-                <!-- Initialize Owl Carousel -->
-                <script>
-                    $(document).ready(function(){
-                        $('.owl-carousel').owlCarousel({
-                            loop: true,
-                            margin: 10,
-                            nav: true,
-                            dots: true,
-                            autoplay: true,
-                            autoplayTimeout: 3000,
-                            autoplayHoverPause: true,
-                            responsive: {
-                                0: {
-                                    items: 1
-                                },
-                                600: {
-                                    items: 2
-                                },
-                                1000: {
-                                    items: 3
-                                }
-                            }
-                        });
-                    });
-                </script>
-            
-            </body>
-            
-            </html>
-            
-<!-- Destination end -->
- <!-- City Destination Start -->
- <div class="container-xxl py-5 destination">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
-            <h1 class="mb-5">City Tours</h1>
-            <!DOCTYPE html>
-            <html lang="en">
-            
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Owl Carousel Demo</title>
-                <!-- Owl Carousel CSS -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-                
-               
-            </head>
-            
-            <body>
-            
-                <!-- Owl Carousel HTML -->
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <img src="img/destination-1.jpg" alt="Image 1">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-2.jpg" alt="Image 2">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-3.jpg" alt="Image 3">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-4.jpg" alt="Image 4">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-1.jpg" alt="image 5">
-                    </div>
-                </div>
-            
-                <!-- Owl Carousel JS -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-            
-                <!-- Initialize Owl Carousel -->
-                <script>
-                    $(document).ready(function(){
-                        $('.owl-carousel').owlCarousel({
-                            loop: true,
-                            margin: 10,
-                            nav: true,
-                            dots: true,
-                            autoplay: true,
-                            autoplayTimeout: 3000,
-                            autoplayHoverPause: true,
-                            responsive: {
-                                0: {
-                                    items: 1
-                                },
-                                600: {
-                                    items: 2
-                                },
-                                1000: {
-                                    items: 3
-                                }
-                            }
-                        });
-                    });
-                </script>
-            
-            </body>
-            
-            </html>
-            
-<!-- Destination end -->
-
-<!-- City Destination Start -->
-<div class="container-xxl py-5 destination">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
-            <h1 class="mb-5">Adventure Tours</h1>
-            <!DOCTYPE html>
-            <html lang="en">
-            
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Owl Carousel Demo</title>
-                <!-- Owl Carousel CSS -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-                
-               
-            </head>
-            
-            <body>
-            
-                <!-- Owl Carousel HTML -->
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <img src="img/destination-1.jpg" alt="Image 1">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-2.jpg" alt="Image 2">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-3.jpg" alt="Image 3">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-4.jpg" alt="Image 4">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-1.jpg" alt="image 5">
-                    </div>
-                </div>
-            
-                <!-- Owl Carousel JS -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-            
-                <!-- Initialize Owl Carousel -->
-                <script>
-                    $(document).ready(function(){
-                        $('.owl-carousel').owlCarousel({
-                            loop: true,
-                            margin: 10,
-                            nav: true,
-                            dots: true,
-                            autoplay: true,
-                            autoplayTimeout: 3000,
-                            autoplayHoverPause: true,
-                            responsive: {
-                                0: {
-                                    items: 1
-                                },
-                                600: {
-                                    items: 2
-                                },
-                                1000: {
-                                    items: 3
-                                }
-                            }
-                        });
-                    });
-                </script>
-            
-            </body>
-            
-            </html>
-            
-<!-- Destination end -->
-
-<!-- City Destination Start -->
-<div class="container-xxl py-5 destination">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
-            <h1 class="mb-5">Beaches</h1>
-            <!DOCTYPE html>
-            <html lang="en">
-            
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Owl Carousel Demo</title>
-                <!-- Owl Carousel CSS -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-                
-               
-            </head>
-            
-            <body>
-            
-                <!-- Owl Carousel HTML -->
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <img src="img/destination-1.jpg" alt="Image 1">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-2.jpg" alt="Image 2">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-3.jpg" alt="Image 3">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-4.jpg" alt="Image 4">
-                    </div>
-                    <div class="item">
-                        <img src="img/destination-1.jpg" alt="image 5">
-                    </div>
-                </div>
-            
-                <!-- Owl Carousel JS -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-            
-                <!-- Initialize Owl Carousel -->
-                <script>
-                    $(document).ready(function(){
-                        $('.owl-carousel').owlCarousel({
-                            loop: true,
-                            margin: 10,
-                            nav: true,
-                            dots: true,
-                            autoplay: true,
-                            autoplayTimeout: 3000,
-                            autoplayHoverPause: true,
-                            responsive: {
-                                0: {
-                                    items: 1
-                                },
-                                600: {
-                                    items: 2
-                                },
-                                1000: {
-                                    items: 3
-                                }
-                            }
-                        });
-                    });
-                </script>
-            
-            </body>
-            
-            </html>
-            
-<!-- Destination end -->
-
-<!-- Footer Section -->
-<footer class="footer-new">
-    <div class="footer-new-container">
-        <!-- Footer Logo and Description -->
-        <div class="footer-new-about">
-            <h2>Explore</h2>
-            <p>Your gateway to discovering breathtaking destinations and unique experiences across the world.</p>
-        </div>
-
-        <!-- Footer Links -->
-        <div class="footer-new-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">All Destinations</a></li>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="homepage.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown">Destinations</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="citytours.html" class="dropdown-item">City Tours</a></li>
+                        <li><a href="beaches.html" class="dropdown-item">Popular Tours</a></li>
+                        <li><a href="adventure.html" class="dropdown-item">Adventure Tours</a></li>
+                        <li><a href="adventure.html" class="dropdown-item">Beach Tours</a></li>
+                        <li><a href="alldestinations.html" class="dropdown-item">All Destinations</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="nav-link">Sign out</a></li>
             </ul>
         </div>
+    </nav>
 
-        <!-- Footer Social Media -->
-        <div class="footer-new-social">
-            <h3>Follow Us</h3>
-            <ul>
-                <li><a href="#"><img src="img/Facebook-icon.png" alt="Facebook"> Facebook</a></li>
-                <li><a href="#"><img src="img/instagram-icon.png" alt="Instagram"> Instagram</a></li>
-                <li><a href="#"><img src="img/twitter-icon.png" alt="Twitter"> Twitter</a></li>
-                <li><a href="#"><img src="img/youtube-icon.png" alt="YouTube"> YouTube</a></li>
-            </ul>
-        </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 
-    <!-- Footer Bottom -->
-    <div class="footer-new-bottom">
-        <p>&copy; 2024 Explore Tourist Spot. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-    </div>
-</footer>
-<style>
-    /* Footer Container */
-.footer-new {
-    background-color: #2C3E50;
-    color: white;
-    padding: 60px 0;
-    font-family: 'Inter', sans-serif;
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Best Tours in Luzon</h1>
+                    <p class="fs-4 text-white mb-4 animated slideInDown">Discover the all Best Enchanted places in Luzon</p>
+                    <div class="position-relative w-75 mx-auto animated slideInDown">
+                        <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Baguio City">
+                        <button type="buttonn" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                    </div>
+                    <div class="bodyyy">
+
+                        <div class="button-container animated slideInDown">
+                            <a href="cute.html">
+                          <button class="pretty-button button1">City Tours</button></a>
+                          <a href="cute.html">
+                          <button class="pretty-button button2">Popular Tours</button></a>
+                          <a href="cute.html">
+                          <button class="pretty-button button3">Adventure Tours</button></a>
+                          <a href="cute.html">
+                          <button class="pretty-button button4">Beach Tours</button></a>
+                          <a href="alldestinations.html">
+                          <button class="pretty-button button5">All Destinations</button></a>
+                        </div>
+                       </div>
+                       <style>
+
+/* Reset some browser default styles */
+.hero-header {
+    background: url('img/taalll.jpg') center center no-repeat;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    top: 90px;
 }
 
-.footer-new-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.hero-headerr {
+    background: url('img/windmill.jpeg') center center no-repeat;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    top: 90px;
 }
-
-/* Footer About */
-.footer-new-about h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #34C759;
-}
-
-.footer-new-about p {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #cccccc;
-}
-
-/* Footer Links */
-.footer-new-links h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.footer-new-links ul {
-    list-style: none;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+.aboutpic {
+    position: relative;
+    top: 110px;
+}
+.navbar-logo{
+    width: 70px;
+    position: relative;
+    top: -10px;
+    left: 20px;
+}
+.cute{
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
 }
 
-.footer-new-links ul li {
-    margin-bottom: 10px;
+/* Navbar styling */
+.navbar {
+    background-color: #86B817;
+    padding: 10px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.footer-new-links ul li a {
-    text-decoration: none;
-    color: #34C759;
-    font-size: 16px;
-}
-
-.footer-new-links ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Footer Social Media */
-.footer-new-social h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.footer-new-social ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-new-social ul li {
-    margin-bottom: 10px;
+.navbar .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.footer-new-social ul li a {
+.navbar-brand {
+    color: white;
+    font-size: 24px;
     text-decoration: none;
-    color: #34C759;
-    font-size: 16px;
 }
 
-.footer-new-social ul li a img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+/* Menu icon (hamburger icon) */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-/* Footer Bottom */
-.footer-new-bottom {
+.menu-icon span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+}
+
+/* Navbar links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 10px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Dropdown menu */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #86B817;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #fdfdfd;
+}
+
+/* Responsive menu */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    position: relative;
+    left: -10px;
+}
+.slideInDown {
+    animation-name: slideInDown;
+    position: relative;
+    bottom: 150px;
+    color: #555;
+}
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.wow {
+    visibility: hidden;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    visibility: visible;
+}
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+.button{
+    background-color: #86B817;
+}
+
+.design{
+    position: relative;
+    top: -90px;
+    margin: 10px;
+    color: white;
+    background-color: #86B817;
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+}
+.h1{
+    color: #86B817;
+}
+.design :hover{
+    background-color: white;
+}
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.owl-carousel {
+    display: none;
+    width: 80%;
+    z-index: s;
+}
+.owl-carousel .owl-stage {
+    position: relative;
+}
+.owl-carousel .owl-item {
+    float: left;
+    min-height: 1px;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+.owl-dots {
     text-align: center;
-    margin-top: 50px;
-    border-top: 1px solid #34C759;
-    padding-top: 20px;
+}
+.DESTINATIONS {
+    position: relative;
+    top: 120px;
 }
 
-.footer-new-bottom p {
-    font-size: 14px;
-    color: #cccccc;
-}
-
-.footer-new-bottom p a {
-    color: #34C759;
+footer {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #f4a261;
+  }
+  
+  .footer-section p {
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
     text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #f4a261;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444444;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+  }
+   .aboutluzon{
+    position: relative;
+    top: 20px;
+   }
+                        .bodyyy {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  bottom: -50px;
 }
 
-.footer-new-bottom p a:hover {
-    text-decoration: underline;
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+  }
 }
 
-</style>      
+.button-container {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center buttons horizontally */
+  gap: 20px; /* Space between buttons */
+}
+
+/* General button styles */
+.pretty-button {
+  border: none; /* No border */
+  color: white; /* Text color */
+  padding: 15px 0; /* Vertical padding */
+  width: 200px; /* Fixed width for even sizes */
+  font-size: 18px; /* Font size */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; 
+}
+
+/* Button 1 */
+.button1 {
+  background-color: #86B817; 
+}
+
+.button1:hover {
+  background-color: #699804; /* Darker shade on hover */
+  transform: translateY(-3px); /* Lift the button */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  
+}
+
+/* Button 2 */
+.button2 {
+  background-color: #86B817; /* Blue color */
+}
+
+.button2:hover {
+  background-color: #699804; /* Darker blue on hover */
+  transform: translateY(-3px); /* Lift the button */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Button 3 */
+.button3 {
+  background-color: #86B817; /* Green color */
+}
+
+.button3:hover {
+  background-color: #699804; /* Darker green on hover */
+  transform: translateY(-3px); /* Lift the button */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Button 4 */
+.button4 {
+  background-color: #86B817; /* Red color */
+}
+
+.button4:hover {
+  background-color: #699804; /* Darker red on hover */
+  transform: translateY(-3px); /* Lift the button */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Button 5 */
+.button5 {
+  background-color: #86B817; /* Purple color */
+}
+
+.button5:hover {
+  background-color: #699804; /* Darker purple on hover */
+  transform: translateY(-3px); /* Lift the button */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+
+}
+
+.colorof{
+    color: #86B817;
+}
+.coloroff{
+    font-size: x-large;
+    color: #86B817;
+}
+                       </style>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- About Start -->
+    <div class="aboutpic">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="coloroff">About Us</h6>
+
+                    <h1 class="mb-4">Welcome to <span class=" colorof">Enchanted Luzon Getaways</span></h1>
+                    <p class="mb-4">Luzon, the largest and most populous island in the Philippines, is a treasure trove of diverse landscapes, rich cultural heritage, and unique experiences. From the bustling metropolis of Manila to the serene mountains of the Cordilleras, Luzon offers a variety of tourist destinations that appeal to travelers of all interests.</p>
+                    <p class="mb-4">This knowledge-based system provides an in-depth exploration of Luzon's top tourist spots, offering valuable information on historical landmarks, natural wonders, and vibrant local communities. Whether you're looking for adventure, relaxation, or a cultural journey, Luzon promises a memorable and enriching experience.1</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="cute"> <a href="cute.html">
+                            <p class="mb-0"><i class="fa fa-arrow-right colorof"></i>City Tour</p>
+                        </div></a>
+                        <div class="col-sm-6"> <a href="cute.html">
+                            <p class="mb-0"><i class="fa fa-arrow-right colorof"></i> Popular City</p>
+                        </div></a>
+                        <div class="col-sm-6"><a href="cute.html">
+                            <p class="mb-0"><i class="fa fa-arrow-right colorof"></i>Adventure City</p>
+                        </div></a>
+                        <div class="col-sm-6"><a href="cute.html">
+                            <p class="mb-0"><i class="fa fa-arrow-right colorof"></i>Beaches</p>
+                        </div></a>
+                        <div class="col-sm-6"><a href="alldestinations.html">
+                            <p class="mb-0"><i class="fa fa-arrow-right colorof"></i>All Destinations</p>
+                        </div></a>
+                        
+                    </div> </div>
+                    <a href="about.html">
+                    <button class="pretty-button button1" href="about.html">Read More</button></a>
+                           
+                </div>       
+            </div>
+        </div>
+    </div>
+
+<!-- Navbar & Hero End -->
+
+
+<!-- Destination Start -->
+
+ <div class="anothercon">
+<div class="container-fluid popular-destinations py-5">
+    <div class="container py-5">
+        <div class="text-center mb-5" style="max-width: 800px; margin: 0 auto;">
+            <h5 class="section-title">Explore Destinations</h5>
+            <h1 class="mb-0 colorof">Popular Tourist Spots</h1>
+        </div>
+            <div class="tab-content">
+                <div id="tab-all" class="tab-pane fade show active">
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="destination-img">
+                                <img class="img-fluid rounded w-100" src="img/mayonnn.jpg" alt="Destination Image">
+                                <div class="destination-overlay">
+                                    <a href="#" class="btn btn-primary">3 Photos</a>
+                                    <h4 class="text-white mt-3">Albay, Bicol</h4>
+                                    <a href="#" class="text-white">View <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                                <div class="zoom-icon">
+                                    <a href="img/mayonnn.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="destination-img">
+                                <img class="img-fluid rounded w-100" src="img/taalll.jpg" alt="Destination Image">
+                                <div class="destination-overlay">
+                                    <a href="#" class="btn btn-primary">3 Photos</a>
+                                    <h4 class="text-white mt-3">San Nicolas, Batangas</h4>
+                                    <a href="#" class="text-white">view <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                                <div class="zoom-icon">
+                                    <a href="img/taalll.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="destination-img">
+                                <img class="img-fluid rounded w-100" src="img/callee.jpg" alt="Destination Image">
+                                <div class="destination-overlay">
+                                    <a href="#" class="btn btn-primary">3 Photos</a>
+                                    <h4 class="text-white mt-3">Vigan, Ilocos</h4>
+                                    <a href="#" class="text-white">view <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                                <div class="zoom-icon">
+                                    <a href="img/callee.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional tabs for Europe, Asia, Africa... -->
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* Section Styles */
+.popular-destinations {
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.destination-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.destination-img img {
+    transition: transform 0.3s ease;
+}
+
+.destination-img:hover img {
+    transform: scale(1.1);
+}
+
+.destination-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.destination-img:hover .destination-overlay {
+    opacity: 1;
+}
+
+.destination-overlay h4 {
+    font-size: 1.25rem;
+}
+
+.destination-overlay a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+
+.zoom-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.zoom-icon a {
+    color: #007bff;
+}
+
+.zoom-icon i {
+    font-size: 20px;
+}
+.anothercon{
+    position: relative;
+    top: 140px;
+}
+
+.anotherconn{
+    position: relative;
+    top: 100px;
+}
+.anotherconnn{
+    position: relative;
+    top: 10px;
+}
+.anotherconnnn{
+    position: relative;
+    top: -60px;
+}
+
+</style>
+
+</div>
+<!-- Destination End -->
+
+<!-- Destination Start -->
+
+<div class="anotherconn">
+    <div class="container-fluid popular-destinations py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5" style="max-width: 800px; margin: 0 auto;">
+                <h5 class="section-title">Urban Destinations</h5>
+                <h1 class="mb-0 colorof">City Tourist Spots</h1>
+            </div>
+        
+                <div class="tab-content">
+                    <div id="tab-all" class="tab-pane fade show active">
+                        <div class="row g-4">
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/dino.jpg" alt="Destination Image">
+                                    <div class="destination-overlay">
+                                        <a href="#" class="btn btn-primary">3 Photos</a>
+                                        <h4 class="text-white mt-3">Clack, Pampanga</h4>
+                                        <a href="#" class="text-white">View <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="zoom-icon">
+                                        <a href="img/dino.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/sky.jpg" alt="Destination Image">
+                                    <div class="destination-overlay">
+                                        <a href="#" class="btn btn-primary">3 Photos</a>
+                                        <h4 class="text-white mt-3">Tagaytay, Philippines</h4>
+                                        <a href="#" class="text-white">view <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="zoom-icon">
+                                        <a href="img/sky.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/batanes.jpg" alt="Destination Image">
+                                    <div class="destination-overlay">
+                                        <a href="#" class="btn btn-primary">3 Photos</a>
+                                        <h4 class="text-white mt-3">Batanes, Philippines</h4>
+                                        <a href="#" class="text-white">view <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="zoom-icon">
+                                        <a href="img/batanes.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional tabs for Europe, Asia, Africa... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Destination Start -->
+
+ <div class="anotherconnn">
+    <div class="container-fluid popular-destinations py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5" style="max-width: 800px; margin: 0 auto;">
+                <h5 class="section-title">Coastal Escapes</h5>
+                <h1 class="mb-0 colorof">Beach Tourist Spots</h1>
+            </div>
+            <div class="tab-class text-center">
+                <div class="tab-content">
+                    <div id="tab-all" class="tab-pane fade show active">
+                        <div class="row g-4">
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/nacpannn.jpg" alt="Destination Image">
+                                    <div class="destination-overlay">
+                                        <a href="#" class="btn btn-primary">3 Photos</a>
+                                        <h4 class="text-white mt-3">Little Boracay, Calatagan</h4>
+                                        <a href="#" class="text-white">View <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="zoom-icon">
+                                        <a href="img/nacpannn.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/patarr.jpg" alt="Destination Image">
+                                    <div class="destination-overlay">
+                                        <a href="#" class="btn btn-primary">3 Photos</a>
+                                        <h4 class="text-white mt-3">Balinao, Philippines</h4>
+                                        <a href="#" class="text-white">view <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="zoom-icon">
+                                        <a href="img/patarr.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/ampere.jpg" alt="Destination Image">
+                                    <div class="destination-overlay">
+                                        <a href="#" class="btn btn-primary">3 Photos</a>
+                                        <h4 class="text-white mt-3">Aurora, Philippines</h4>
+                                        <a href="#" class="text-white">view <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="zoom-icon">
+                                        <a href="img/ampere.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional tabs for Europe, Asia, Africa... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Destination Start -->
+
+ <div class="anotherconnnn">
+    <div class="container-fluid popular-destinations py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5" style="max-width: 800px; margin: 0 auto;">
+                <h5 class="section-title">Thrilling Expeditions</h5>
+                <h1 class="mb-0 colorof">Adventure Tourist Spots</h1>
+            </div>
+            <div class="tab-class text-center">
+                <div class="tab-content">
+                    <div id="tab-all" class="tab-pane fade show active">
+                        <div class="row g-4">
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/kayak.jpg" alt="Destination Image">
+                                    <div class="destination-overlay">
+                                        <a href="#" class="btn btn-primary">3 Photos</a>
+                                        <h4 class="text-white mt-3">Paris, France</h4>
+                                        <a href="#" class="text-white">View <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="zoom-icon">
+                                        <a href="img/kayak.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/hopping.jpg" alt="Destination Image">
+                                    <div class="destination-overlay">
+                                        <a href="#" class="btn btn-primary">3 Photos</a>
+                                        <h4 class="text-white mt-3">Kyoto, Japan</h4>
+                                        <a href="#" class="text-white">view <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="zoom-icon">
+                                        <a href="img/hopping.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="img/trekking.jpg" alt="Destination Image">
+                                    <div class="destination-overlay">
+                                        <a href="#" class="btn btn-primary">3 Photos</a>
+                                        <h4 class="text-white mt-3">Cape Town, South Africa</h4>
+                                        <a href="#" class="text-white">view <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                    <div class="zoom-icon">
+                                        <a href="img/trekking.jpg" data-lightbox="destination"><i class="fa fa-search-plus btn btn-light"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional tabs for Europe, Asia, Africa... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="footerdegg">
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section about-us">
+            <h4>About Enchanted Luzon Getaways</h4>
+            <p>We offer curated experiences and detailed guides to help you explore the hidden gems and popular tourist spots across Luzon. Our goal is to provide travelers with the best resources to enjoy their adventures.</p>
+          </div>
+          
+          <div class="footer-section quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">City Tours</a></li>
+              <li><a href="#">Adventure Tours</a></li>
+              <li><a href="#">Popular Tours</a></li>
+              <li><a href="#">Beach Tours</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section contact-us">
+            <h4>Contact Information</h4>
+            <ul>
+              <li><i class="fas fa-envelope"></i> info@enchantedluzon.com</li>
+              <li><i class="fas fa-phone"></i> +63 912 345 6789</li>
+              <li><i class="fas fa-map-marker-alt"></i> Manila, Philippines</li>
+            </ul>
+          </div>
+          
+          <div class="footer-section social-media">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2024 Enchanted Luzon Getaways | All Rights Reserved</p>
+        </div>
+      </footer></div>
+      <style>
+        /* Footer styling */
+.footerdegg{
+  position: relative;
+  top: 100px;
+}
+
+footer {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+  height:470px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-section h4 {
+  color: #f9a825;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-section p, 
+.footer-section li, 
+.footer-section a {
+  font-size: 15px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.footer-section a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #f9a825;
+}
+
+/* About Us section */
+.about-us p {
+  max-width: 400px;
+}
+
+/* Quick Links section */
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links ul li {
+  margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+  color: #ffffff;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.quick-links ul li a:hover {
+  color: #f9a825;
+}
+
+/* Contact Information section */
+.contact-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-us ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.contact-us ul li i {
+  margin-right: 8px;
+  color: #f9a825;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #f9a825;
+  border-color: #f9a825;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+  }
+}
+
+      </style>
+
+<!-- Bootstrap JS & Font Awesome -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+   
 
 </body>
 </html>
